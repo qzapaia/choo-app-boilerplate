@@ -6,3 +6,10 @@
 - HMR
 
 - Ready for Heroku deploy
+
+
+### To run local env
+
+```
+npm run dev
+```
