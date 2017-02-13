@@ -9,7 +9,7 @@ var homeView = require('./views/home');
 app.model(require('./model/main'));
 
 // Routes
-app.router(['/', homeView])
+app.router(['/', homeView]);
 
 // Setup
 var tree = app.start();
@@ -17,9 +17,9 @@ var el = document.querySelector('#choo-app');
 el && el.remove();
 document.body.appendChild(html`<div id="choo-app">${tree}</div>`);
 
-// app
+// HMR
 if(module.hot) {
-	module.hot.accept(function(err) {
+	module.hot.accept(function(err){
 		err && console.error("Cannot apply hot update", err);
 	});
 }
