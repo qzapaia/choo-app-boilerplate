@@ -1,3 +1,9 @@
+# Setup
+```sh
+npm run setup
+```
+Remove .git folder and install dependencies
+
 # Working on this
 
 - Choo
