@@ -19,3 +19,9 @@ npm run setup
 ```
 npm run dev
 ```
+
+### To generate views
+
+```
+npm run gen
+```

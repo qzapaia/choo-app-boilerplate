@@ -3,7 +3,7 @@ var html = require('choo/html');
 var app = choo();
 
 // Views
-var homeView = require('./views/home');
+var homeView = require('./views/home')('sub');
 
 // Model
 app.model(require('./model/main'));

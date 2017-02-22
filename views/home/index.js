@@ -1,15 +1,9 @@
-var html = require('choo/html')
-var styles = require('./styles.css');
+const html = require('choo/html');
+const styles = require('./styles.css');
 
-module.exports = function(state, prev, send) {
-  return html`
-    <main class=${styles.root}>
-      <h1>Title: ${state.title}</h1>
-      <input type="text" oninput=${update}>
-    </main>
-  `
-
-  function update (e) {
-    send('update', e.target.value)
-  }
-}
+module.exports = (config) => (state, prev, send) => html`
+  <main class=${styles.root}>
+    <h1>Title: ${state.title}</h1>
+    <h1>Subtitle: ${config}</h1>
+  </main>
+`
