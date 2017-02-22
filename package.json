@@ -1,5 +1,5 @@
 {
-  "name": "choo-app-template",
+  "name": "choo-app-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -27,7 +27,6 @@
     "postcss-cssnext": "^2.9.0",
     "postcss-import": "^9.1.0",
     "postcss-loader": "^1.2.2",
-    "postcss-mixins": "^5.4.1",
     "postcss-url": "^5.1.2",
     "query-string": "^4.3.1",
     "style-loader": "^0.13.1",

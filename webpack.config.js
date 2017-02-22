@@ -42,7 +42,6 @@ module.exports = {
               plugins:function(){
                 return [require("postcss-import")({ addDependencyTo: webpack }),
                 require("postcss-url")(),
-                require("postcss-mixins")(),
                 require("postcss-cssnext")()]
               }
             }
