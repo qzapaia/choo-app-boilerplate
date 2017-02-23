@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "setup": "rm -rf .git && npm install",
-    "start": "cross-env NODE_ENV=production node server.js",
-    "dev": "cross-env NODE_ENV=development cross-env node server.js",
+    "start": "cross-env NODE_ENV=production node index.js",
+    "dev": "cross-env NODE_ENV=development cross-env node index.js",
     "build": "cross-env NODE_ENV=production webpack -p",
     "postinstall": "npm run build",
     "gen": "./node_modules/.bin/plop"

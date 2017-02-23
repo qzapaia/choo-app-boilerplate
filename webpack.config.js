@@ -6,7 +6,7 @@ var devPublicPath = 'http://localhost:' + port;
 var hotMiddlewareScript = 'webpack-hot-middleware/client?path='+devPublicPath+'/__webpack_hmr';
 
 
-var entries = ['./index.js'];
+var entries = ['./app.js'];
 
 development && entries.push(hotMiddlewareScript);
 

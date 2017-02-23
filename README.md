@@ -14,13 +14,13 @@ npm run setup
 - Ready for Heroku deploy
 
 
-### To run local env
+### Run local environment
 
 ```
 npm run dev
 ```
 
-### To generate views
+### Generate views
 
 ```
 npm run gen
