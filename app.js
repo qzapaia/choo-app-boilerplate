@@ -1,6 +1,14 @@
-var choo = require('choo');
-var html = require('choo/html');
-var app = choo();
+const choo = require('choo');
+const html = require('choo/html');
+const mount = require('choo/mount');
+const resume = require('choo-resume');
+const app = choo();
+
+// Hot Reload
+app.use(resume());
+
+// global.css
+require('./css/base.css');
 
 // Views
 var homeView = require('./views/home')('sub');
