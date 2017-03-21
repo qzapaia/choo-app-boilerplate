@@ -19,7 +19,7 @@ if(development){
 
 app.use(express.static('public'));
 app.use(express.static('build'));
-app.get('/',function(req,res){ res.sendFile(__dirname + '/index.html'); })
+app.use(function(req,res){ res.sendFile(__dirname + '/index.html'); })
 
 app.listen(port,function(){
   var showPort = port == '80'? '/' : (':'+port+'/');
