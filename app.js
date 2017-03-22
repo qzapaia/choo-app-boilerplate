@@ -1,11 +1,12 @@
 const choo = require('choo');
 const html = require('choo/html');
 const mount = require('choo/mount');
-const resume = require('choo-resume');
+const resume = require('./helpers/choo-resume');
 const app = choo();
+const DEV = process.env.NODE_ENV === 'development';
 
 // Hot Reload
-app.use(resume());
+DEV && app.use(resume());
 
 // global.css
 require('./css/base.css');
