@@ -1,12 +1,8 @@
 const choo = require('choo');
 const html = require('choo/html');
-const mount = require('choo/mount');
 const resume = require('./helpers/choo-resume');
 const app = choo();
 const DEV = process.env.NODE_ENV === 'development';
-
-// Hot Reload
-DEV && app.use(resume());
 
 // global.css
 require('./css/base.css');
@@ -15,13 +11,13 @@ require('./css/base.css');
 var homeView = require('./views/home')('sub');
 
 // Model
-app.model(require('./models/main'));
+app.use(require('./stores/main'));
 
 // Routes
-app.router(['/', homeView]);
+app.route('/', homeView);
 
 // Setup
-var tree = app.start();
+var tree = resume(app).start();
 var el = document.querySelector('#choo-app');
 el && el.remove();
 document.body.appendChild(html`<div id="choo-app">${tree}</div>`);
