@@ -6,7 +6,7 @@ npm run setup
 
 # Working on this
 
-- Choo
+- Choo v5
 - CSS Next
 - Webpack
 - HMR
